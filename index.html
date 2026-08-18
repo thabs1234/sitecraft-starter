@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{BUSINESS_NAME}} | {{SERVICE_KEYWORD}} in {{CITY}}, South Africa</title>
+  <meta name="description" content="{{BUSINESS_TAGLINE}}. Professional {{SERVICE_KEYWORD}} serving {{CITY}} and surrounding areas. Call {{PHONE}} today." />
+  <meta name="theme-color" content="#0b3d2e" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{BUSINESS_NAME}}" />
+  <meta property="og:description" content="{{BUSINESS_TAGLINE}}" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand">{{BUSINESS_NAME}}</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="btn btn-sm">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">{{CITY}}'s trusted {{SERVICE_KEYWORD}} pro</p>
+      <h1>{{BUSINESS_TAGLINE}}</h1>
+      <p class="lead">{{HERO_SUBLINE}}</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn">Get a Free Quote</a>
+        <a href="tel:{{PHONE_CLEAN}}" class="btn btn-ghost">Call {{PHONE}}</a>
+      </div>
+      <ul class="trust-row">
+        <li>✓ Local {{CITY}} business</li>
+        <li>✓ Fast response</li>
+        <li>✓ Fair, upfront pricing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div>
+        <h2>About {{BUSINESS_NAME}}</h2>
+        <p>{{ABOUT_PARAGRAPH}}</p>
+        <p>We serve {{CITY}} and nearby suburbs with reliable, friendly service you can count on.</p>
+      </div>
+      <aside class="card">
+        <h3>Why choose us</h3>
+        <ul class="check-list">
+          <li>{{USP_1}}</li>
+          <li>{{USP_2}}</li>
+          <li>{{USP_3}}</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <h2 class="center">Our Services</h2>
+      <div class="grid">
+        <article class="tile">
+          <div class="tile-icon">🔧</div>
+          <h3>{{SERVICE_1_TITLE}}</h3>
+          <p>{{SERVICE_1_DESC}}</p>
+        </article>
+        <article class="tile">
+          <div class="tile-icon">⚡</div>
+          <h3>{{SERVICE_2_TITLE}}</h3>
+          <p>{{SERVICE_2_DESC}}</p>
+        </article>
+        <article class="tile">
+          <div class="tile-icon">🛡️</div>
+          <h3>{{SERVICE_3_TITLE}}</h3>
+          <p>{{SERVICE_3_DESC}}</p>
+        </article>
+        <article class="tile">
+          <div class="tile-icon">📞</div>
+          <h3>{{SERVICE_4_TITLE}}</h3>
+          <p>{{SERVICE_4_DESC}}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="center">What Customers Say</h2>
+      <div class="grid">
+        <blockquote class="quote">
+          <p>"{{TESTIMONIAL_1}}"</p>
+          <footer>— {{TESTIMONIAL_1_NAME}}, {{CITY}}</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>"{{TESTIMONIAL_2}}"</p>
+          <footer>— {{TESTIMONIAL_2_NAME}}, {{CITY}}</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container two-col">
+      <div>
+        <h2>Get in Touch</h2>
+        <p>Call, WhatsApp, or send a message — we reply fast.</p>
+        <ul class="contact-info">
+          <li><strong>Phone:</strong> <a href="tel:{{PHONE_CLEAN}}">{{PHONE}}</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/{{WHATSAPP}}">{{PHONE}}</a></li>
+          <li><strong>Email:</strong> <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+          <li><strong>Area:</strong> {{CITY}} &amp; surrounds</li>
+        </ul>
+        <a class="btn btn-wa" href="https://wa.me/{{WHATSAPP}}?text=Hi%20{{BUSINESS_NAME}},%20I%20need%20a%20quote">Chat on WhatsApp</a>
+      </div>
+
+      <form class="form card" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="{{WEB3FORMS_KEY}}" />
+        <input type="hidden" name="subject" value="New enquiry from {{BUSINESS_NAME}} website" />
+        <input type="hidden" name="from_name" value="{{BUSINESS_NAME}}" />
+
+        <label>Name
+          <input type="text" name="name" required placeholder="Your name" />
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" required placeholder="082 000 0000" />
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="you@email.com" />
+        </label>
+        <label>What do you need?
+          <textarea name="message" rows="4" required placeholder="Tell us a bit about the job..."></textarea>
+        </label>
+        <button type="submit" class="btn">Send Enquiry</button>
+        <p class="form-status" id="formStatus" role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> {{BUSINESS_NAME}}. {{SERVICE_KEYWORD}} in {{CITY}}, South Africa.</p>
+      <p class="muted">Website by SiteCraft SA · <a href="tel:{{PHONE_CLEAN}}">{{PHONE}}</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

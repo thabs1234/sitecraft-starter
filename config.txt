@@ -1,0 +1,29 @@
+# SiteCraft SA template — fill in, then copy each value into index.html
+# Replace every {{PLACEHOLDER}} in index.html with the value after the =
+
+BUSINESS_NAME=Your Business Name
+SERVICE_KEYWORD=plumbing
+CITY=Your City
+BUSINESS_TAGLINE=Your short, punchy headline
+HERO_SUBLINE=One line that explains what you do + speed/promise
+PHONE=074 000 0000
+PHONE_CLEAN=+27740000000
+WHATSAPP=27740000000
+EMAIL=hello@business.co.za
+ABOUT_PARAGRAPH=Write one or two sentences about the business here.
+USP_1=First unique selling point
+USP_2=Second unique selling point
+USP_3=Third unique selling point
+SERVICE_1_TITLE=Service One
+SERVICE_1_DESC=Short description of service one.
+SERVICE_2_TITLE=Service Two
+SERVICE_2_DESC=Short description of service two.
+SERVICE_3_TITLE=Service Three
+SERVICE_3_DESC=Short description of service three.
+SERVICE_4_TITLE=Service Four
+SERVICE_4_DESC=Short description of service four.
+TESTIMONIAL_1=Great service, arrived fast and fixed it properly.
+TESTIMONIAL_1_NAME=Happy Customer
+TESTIMONIAL_2=Reliable and fairly priced. Highly recommend.
+TESTIMONIAL_2_NAME=Satisfied Client
+WEB3FORMS_KEY=your-web3forms-access-key
